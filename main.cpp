@@ -9,12 +9,12 @@ void radixsort(vector<string>&a, int m, int k, int i){
     for(int j = 0; j < a.size(); j++){
         count[a[j][i] - 'a']++;
     }
-    int temp = 0;
+    int t = 0;
     int p = 0;
     for(int j = 0; j < count.size(); j++){
-        temp = count[j];
+        t = count[j];
         count[j] = p;
-        p = p + temp;
+        p = p + t;
     }
     for(int j = 0; j < a.size(); j++){
         result[count[a[j][i] - 'a']] = a[j];
