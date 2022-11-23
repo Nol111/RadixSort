@@ -33,7 +33,7 @@ int main(){
         radixsort(a, y, z, i);
     }
     for (int i = 0; i < x; i++) {
-        cout << a[i]<<'\n';
+        cout << a[i]<<endl;
     };
 }
 
